@@ -13,11 +13,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\ujs160\\source\\repos\\nef4ri0us\\AdventOfCode2020\\Day1\\Day1.csproj",
+      "projectUniqueName": "C:\\Users\\ujs160\\Source\\Repos\\nef4ri0us\\AdventOfCode2020\\Day1\\Day1.csproj",
       "projectName": "Day1",
-      "projectPath": "C:\\Users\\ujs160\\source\\repos\\nef4ri0us\\AdventOfCode2020\\Day1\\Day1.csproj",
+      "projectPath": "C:\\Users\\ujs160\\Source\\Repos\\nef4ri0us\\AdventOfCode2020\\Day1\\Day1.csproj",
       "packagesPath": "C:\\Users\\ujs160\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\ujs160\\source\\repos\\nef4ri0us\\AdventOfCode2020\\Day1\\obj\\",
+      "outputPath": "C:\\Users\\ujs160\\Source\\Repos\\nef4ri0us\\AdventOfCode2020\\Day1\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\ujs160\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -60,7 +60,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.302\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.303\\RuntimeIdentifierGraph.json"
       }
     }
   }
