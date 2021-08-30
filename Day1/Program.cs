@@ -1,5 +1,6 @@
 ﻿using System;
 using System.IO;
+using System.Collections.Generic;
 
 namespace Day1
 {
@@ -8,24 +9,35 @@ namespace Day1
         static void Main(string[] args)
         {
             
+
+
             try
             {
                 // Create an instance of StreamReader to read from a file.
                 // The using statement also closes the StreamReader.
-                using (StreamReader sr = new StreamReader("Data.txt"))
-                {
-                    //string line;
-                    
-                    
+                using(StreamReader sr = new StreamReader("Data.txt"))
+                { 
+                string line;
+                List<int> numbs = new List<int>();
+                List<int> numbs2 = new List<int>();
+
                     // Read and display lines from the file until the end of
                     // the file is reached.
-                    //while ((line = sr.ReadLine()) != null)
-                    //{
-                    //    Console.WriteLine(line);
-                    //}
+                    while ((line = sr.ReadLine()) != null)
+                    {
+                       int w = Convert.ToInt32(sr.ReadLine());
+                       numbs.Add(w);
+                    }
 
-                    OriginalArray[i] = Convert.ToInt32(sr.ReadLine());
+                    numbs.Sort();
+                    numbs2 = numbs;
+
+                    foreach (int no in numbs2)
+                    {
+                        Console.WriteLine(no);
+                    }
                 }
+                
             }
             catch (Exception e)
             {
