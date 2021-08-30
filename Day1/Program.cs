@@ -31,10 +31,25 @@ namespace Day1
 
                     numbs.Sort();
                     numbs2 = numbs;
-
-                    foreach (int no in numbs2)
+                    int sum = 0;
+                    foreach (int no in numbs)
                     {
-                        Console.WriteLine(no);
+                        foreach (int no2 in numbs2)
+                        {
+
+                            sum = no + no2;
+                            Console.WriteLine("{0} + {1} = {2}", no, no2, sum);        
+                         
+                            if (no + no2 > 2020)
+                            {
+                               //break;
+                            }
+                            else if (no + no2 == 2020)
+                            {
+                                Console.WriteLine("Number one is " + no);
+                                Console.WriteLine("Number two is " + no2);
+                            }
+                        }
                     }
                 }
                 
