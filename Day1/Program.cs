@@ -22,7 +22,6 @@ namespace Day1
                 List<int> numbs2 = new List<int>();
 
                     // Read and display lines from the file until the end of
-                    // the file is reached.
                     while (sr.Peek() > -1)
                     {
                        int w = Convert.ToInt32(sr.ReadLine());
@@ -30,21 +29,6 @@ namespace Day1
                     }
 
                     numbs.Sort();
-
-                    //int countno = 1;
-                    //foreach (int nono in numbs)
-                    //{
-
-                    //    Console.WriteLine(countno);
-                    //    countno++;
-                    //}
-
-
-                    //foreach (int no in numbs)
-                    //{
-                    //    Console.WriteLine(no);
-                    //}
-
 
                     numbs2 = numbs;
                     //int sum = 0;
@@ -66,12 +50,14 @@ namespace Day1
                                 //Console.WriteLine("{0} * {1}  = {2]", no, no2, mult );
                                 Console.WriteLine(mult);
                                 Console.ReadLine();
-                                break;
+                                goto JumpHere1;
                                 
                             }
                         }
                         
                     }
+
+                    JumpHere1:
 
                     List<int> numbs3 = new List<int>();
                     numbs3 = numbs;
