@@ -8,24 +8,22 @@ namespace Day1
     {
         static void Main(string[] args)
         {
-            
-
 
             try
             {
                 // Create an instance of StreamReader to read from a file.
                 // The using statement also closes the StreamReader.
-                using(StreamReader sr = new StreamReader("Data.txt"))
-                { 
-                //string line;
-                List<int> numbs = new List<int>();
-                List<int> numbs2 = new List<int>();
+                using (StreamReader sr = new StreamReader("Data.txt"))
+                {
+                    //string line;
+                    List<int> numbs = new List<int>();
+                    List<int> numbs2 = new List<int>();
 
                     // Read and display lines from the file until the end of
                     while (sr.Peek() > -1)
                     {
-                       int w = Convert.ToInt32(sr.ReadLine());
-                       numbs.Add(w);
+                        int w = Convert.ToInt32(sr.ReadLine());
+                        numbs.Add(w);
                     }
 
                     numbs.Sort();
@@ -39,25 +37,25 @@ namespace Day1
 
                             ///sum = no + no2;
                             //Console.WriteLine("{0} + {1} = {2}", no, no2, sum);        
-                         
+
                             if (no + no2 > 2020)
                             {
-                               break;
+                                break;
                             }
                             else if (no + no2 == 2020)
                             {
                                 int mult = no * no2;
                                 //Console.WriteLine("{0} * {1}  = {2]", no, no2, mult );
                                 Console.WriteLine(mult);
-                                Console.ReadLine();
+                                //Console.ReadLine();
                                 goto JumpHere1;
-                                
+
                             }
                         }
-                        
+
                     }
 
-                    JumpHere1:
+                JumpHere1:
 
                     List<int> numbs3 = new List<int>();
                     numbs3 = numbs;
@@ -81,23 +79,17 @@ namespace Day1
                                     int mult = no * no2 * no3;
                                     //Console.WriteLine("{0} * {1}  = {2]", no, no2, mult );
                                     Console.WriteLine(mult);
-                                    Console.ReadLine();
+                                    //Console.ReadLine();
                                     Environment.Exit(0);
 
                                 }
-                            } 
-
-
-
-
-
-
+                            }
 
                         }
 
                     }
                 }
-                
+
             }
             catch (Exception e)
             {
