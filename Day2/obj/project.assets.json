@@ -13,11 +13,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\ujs160\\source\\repos\\nef4ri0us\\AdventOfCode2020\\Day2\\Day2\\Day2.csproj",
+      "projectUniqueName": "C:\\Users\\ujs160\\source\\repos\\nef4ri0us\\AdventOfCode2020\\Day2\\Day2.csproj",
       "projectName": "Day2",
-      "projectPath": "C:\\Users\\ujs160\\source\\repos\\nef4ri0us\\AdventOfCode2020\\Day2\\Day2\\Day2.csproj",
+      "projectPath": "C:\\Users\\ujs160\\source\\repos\\nef4ri0us\\AdventOfCode2020\\Day2\\Day2.csproj",
       "packagesPath": "C:\\Users\\ujs160\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\ujs160\\source\\repos\\nef4ri0us\\AdventOfCode2020\\Day2\\Day2\\obj\\",
+      "outputPath": "C:\\Users\\ujs160\\source\\repos\\nef4ri0us\\AdventOfCode2020\\Day2\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\ujs160\\AppData\\Roaming\\NuGet\\NuGet.Config",
