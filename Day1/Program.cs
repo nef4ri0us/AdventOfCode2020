@@ -17,39 +17,98 @@ namespace Day1
                 // The using statement also closes the StreamReader.
                 using(StreamReader sr = new StreamReader("Data.txt"))
                 { 
-                string line;
+                //string line;
                 List<int> numbs = new List<int>();
                 List<int> numbs2 = new List<int>();
 
                     // Read and display lines from the file until the end of
                     // the file is reached.
-                    while ((line = sr.ReadLine()) != null)
+                    while (sr.Peek() > -1)
                     {
                        int w = Convert.ToInt32(sr.ReadLine());
                        numbs.Add(w);
                     }
 
                     numbs.Sort();
+
+                    //int countno = 1;
+                    //foreach (int nono in numbs)
+                    //{
+
+                    //    Console.WriteLine(countno);
+                    //    countno++;
+                    //}
+
+
+                    //foreach (int no in numbs)
+                    //{
+                    //    Console.WriteLine(no);
+                    //}
+
+
                     numbs2 = numbs;
-                    int sum = 0;
+                    //int sum = 0;
                     foreach (int no in numbs)
                     {
                         foreach (int no2 in numbs2)
                         {
 
-                            sum = no + no2;
-                            Console.WriteLine("{0} + {1} = {2}", no, no2, sum);        
+                            ///sum = no + no2;
+                            //Console.WriteLine("{0} + {1} = {2}", no, no2, sum);        
                          
                             if (no + no2 > 2020)
                             {
-                               //break;
+                               break;
                             }
                             else if (no + no2 == 2020)
                             {
-                                Console.WriteLine("Number one is " + no);
-                                Console.WriteLine("Number two is " + no2);
+                                int mult = no * no2;
+                                //Console.WriteLine("{0} * {1}  = {2]", no, no2, mult );
+                                Console.WriteLine(mult);
+                                Console.ReadLine();
+                                break;
+                                
                             }
                         }
+                        
+                    }
+
+                    List<int> numbs3 = new List<int>();
+                    numbs3 = numbs;
+                    //int sum = 0;
+                    foreach (int no in numbs)
+                    {
+                        foreach (int no2 in numbs2)
+                        {
+                            foreach (int no3 in numbs3)
+                            {
+
+                                ///sum = no + no2;
+                                //Console.WriteLine("{0} + {1} = {2}", no, no2, sum);        
+
+                                if (no + no2 + no3 > 2020)
+                                {
+                                    break;
+                                }
+                                else if (no + no2 + no3 == 2020)
+                                {
+                                    int mult = no * no2 * no3;
+                                    //Console.WriteLine("{0} * {1}  = {2]", no, no2, mult );
+                                    Console.WriteLine(mult);
+                                    Console.ReadLine();
+                                    Environment.Exit(0);
+
+                                }
+                            } 
+
+
+
+
+
+
+
+                        }
+
                     }
                 }
                 
